@@ -15,9 +15,9 @@ Last edited: January 2018
 import numpy as np
 import matplotlib.pyplot as plt
 
-import engine.kinetic_battery as kb
-import engine.synth_solar as synth_solar
-import engine.load_model as load_model
+from . import kinetic_battery as kb
+from . import synth_solar as synth_solar
+from . import load_model as load_model
 
 def run_sim(sys_dict, pv_dict, batt_dict, gen_dict, load_dict):
     """
